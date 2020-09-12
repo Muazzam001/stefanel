@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Stefanel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Montserrat font family-->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- jquery-fancybox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css"/>
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="wrapper">
+    <!-- header -->
+    <div class="top-hidden-block login-block">
+        <div class="container container-custom">
+            <div class="close-button" id="close-btn-log"></div>
+            <div class="login-block-inner">
+                <form action="" method="">
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="username" value="" placeholder="Insert here" class="input-text">
+                    </div>
+                    <div class="input-box">
+                        <label for="pass">Password</label>
+                        <input type="password" id="pass" name="pass" placeholder="Insert here" class="input-text"
+                               title="Password">
+                        <a href="#" class="forgot-pass">Forgot your password or you don't have any?</a>
+                    </div>
+                    <div class="subs-box-h">
+                        <button type="submit" class="btn btn-custom btn-form-h"><span>Login</span></button>
+                        <br>
+                        <a href="#" class="register">Not yet registered?</a>
+                    </div>
+                    <div class="clearfix"></div>
+                </form>
+            </div>
+            <div class="login-block"></div>
+        </div>
+    </div>
+    <div class="top-hidden-block search-block">
+        <div class="container container-custom">
+            <div class="close-button" id="close-btn-search"></div>
+            <div class="search-block-inner">
+                <form action="" method="">
+                    <div class="input-box">
+                        <input type="text" name="username" value="" placeholder="Insert here" class="input-text">
+                    </div>
+                    <div class="subs-box-h">
+                        <button type="submit" class="btn btn-custom btn-form-h"><span>Search <i
+                                class="fa fa-search"></i></span></button>
+                    </div>
+                    <div class="clearfix"></div>
+                </form>
+            </div>
+            <div class="login-block"></div>
+        </div>
+    </div>
+
+
+    <div class="header-container">
+        <div class="container container-custom">
+            <div class="header">
+                <div class="topbar  clearfix hide-mobile">
+                    <div class="topbar-left">
+                        <ul>
+                            <li><a href="#" id="toggleSearch">Search</a></li>
+                            <li><a href="#">Stores</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="topbar-right">
+                        <ul>
+                            <li><a data-fancybox data-src="#hidden-content" href="javascript:void(0);"
+                                   class="country-link hide-mobile">Country</a></li>
+                            <li><a href="#" id="toggleLogin">Log in</a></li>
+                            <li><a href="#">Wishlist</a></li>
+                            <li><a href="#">My Cart</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo hide-mobile">
+                        <a href="#"><img src="img/model%20site%20footer%20.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="navbar-container hide-mobile">
+                    <nav class="navbar navbar-toggleable-md navbar-light navbar-custom" id="navbar-custom">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a class="navbar-brand" href="#" style="display:none"><img src="img/logo-mobile.png" alt=""></a>
+                        <a data-fancybox data-src="#hidden-content" href="javascript:;"
+                           class="country-link show-mobile">Country<span class="cart-icon"></span></a>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">NEW IN</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="http://example.com"
+                                       id="navbarDropdownMenuLinkK" data-toggle="dropdown" aria-haspopup="true"
+                                       aria-expanded="false">
+                                        KNIT
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkK">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-4">
+                                                    <ul class="drop-list1">
+                                                        <li><a href="#"><span>Walk the line</span></a></li>
+                                                        <li><a href="#"><span>le Coccole</span></a></li>
+                                                        <li><a href="#"><span>Simple Pastels</span></a></li>
+                                                        <li><a href="#"><span>Light Cashmere</span></a></li>
+                                                        <li><a href="#"><span>L'amore addosso</span></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-4">
+                                                    <ul class="drop-list2">
+                                                        <li><a href="#"><span>Knitwear and Cardigan</span></a></li>
+                                                        <li><a href="#"><span>Jacket and Coats</span></a></li>
+                                                        <li><a href="#"><span>Dress and Suits</span></a></li>
+                                                        <li><a href="#"><span>Pants</span></a></li>
+                                                        <li><a href="#"><span>Skirts</span></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-4">
+                                                    <img src="img/FREE_SHIPPING_250_ENG.jpg" class="mb-3" alt="">
+                                                    <img src="img/dropdown_eng_10sconto.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="http://example.com"
+                                       id="navbarDropdownMenuLinkW" data-toggle="dropdown" aria-haspopup="true"
+                                       aria-expanded="false">
+                                        WOMEN
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkW">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-4">
+                                                    <ul class="drop-list1">
+                                                        <li><a href="#"><span>Walk the line</span></a></li>
+                                                        <li><a href="#"><span>le Coccole</span></a></li>
+                                                        <li><a href="#"><span>Simple Pastels</span></a></li>
+                                                        <li><a href="#"><span>Light Cashmere</span></a></li>
+                                                        <li><a href="#"><span>L'amore addosso</span></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-4">
+                                                    <ul class="drop-list2">
+                                                        <li><a href="#"><span>Knitwear</span></a></li>
+                                                        <li><a href="#"><span>Jackets and coats</span></a></li>
+                                                        <li><a href="#"><span>Dresses and jumpsuits</span></a></li>
+                                                        <li><a href="#"><span>Tops and shirts</span></a></li>
+                                                        <li><a href="#"><span>Pants</span></a></li>
+                                                        <li><a href="#"><span>Skirts</span></a></li>
+                                                        <li><a href="#"><span>Scarf and Foulard</span></a></li>
+                                                        <li><a href="#"><span>Footwear and bags</span></a></li>
+                                                        <li><a href="#"><span>Accessories</span></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-4">
+                                                    <img src="img/FREE_SHIPPING_250_ENG.jpg" class="mb-3" alt="">
+                                                    <img src="img/dropdown_eng_10sconto.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">EYEWEAR</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">LOOKBOOK</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">BLOG</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">SECOND SEASON</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="nav-mobile show-mobile">
+                    <div id="mySidenav" class="sidenav">
+                        <form action="" method="post" class="search-form-m">
+                            <div class="form-search-m">
+                                <button type="submit" class="btn-m"><span></span></button>
+                                <input type="text" placeholder="Search" value="" class="input-text" maxlength="128">
+                            </div>
+                        </form>
+                        <!--
+                                        <ul class="nav-m-search">
+                                         <li><a href="#">Search</a></li>
+                                         </ul>
+                        -->
+                        <ul class="nav-m-top">
+                            <li><a href="#">Stores</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#" id="toggleLogin">Log in</a></li>
+                            <li><a href="#">Wishlist</a></li>
+                            <li><a href="#">My Cart</a></li>
+                        </ul>
+                        <ul class="nav-m-main">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">NEW IN</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">KNIT</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#">WOMEN</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">EYEWEAR</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">LOOKBOOK</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">BLOG</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">SECOND SEASON</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="main" class="show-mobile">
+                        <span class="hamburger" id="hamburger" style="font-size:30px;cursor:pointer"></span>
+                        <a class="navbar-brand" href="#" style="display:none"><img src="img/logo-mobile.png" alt=""></a>
+                        <a data-fancybox data-src="#hidden-content" href="javascript:;"
+                           class="country-link show-mobile">Country<span class="cart-icon"></span></a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- carousel -->
+    <div class="container container-custom">
+        <div id="carouselExampleControls" class="carousel slide carousel-custom" data-ride="carousel">
+            <div class="show-mobile">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+            </div>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img class="d-block img-fluid" src="img/1100x600-Slider_HP.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p><a href="#" class="btn btn-default btn-custom">DISCOVER MORE</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-fluid" src="img/1100x600_newhp.jpg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p><a href="#" class="btn btn-default btn-custom">DISCOVER MORE</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-fluid" src="img/1100x600_Main_Slider_eng.jpg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p><a href="#" class="btn btn-default btn-custom">DISCOVER MORE</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="hide-mobile">
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <!--   section one grid -->
+        <div class="section1-container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3 mb-4"><img src="img/lb_05.jpg" alt=""></div>
+                <div class="col-xs-12 col-sm-6 col-md-3 mb-4"><img src="img/lb_06.jpg" alt=""></div>
+                <div class="col-xs-12 col-sm-6 col-md-3 mb-4"><img src="img/350x506_sp_04.jpg" alt=""></div>
+                <div class="col-xs-12 col-sm-6 col-md-3 mb-4"><img src="img/350x506_sp_rombi.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="subs-box">
+                <form action="">
+                    <div class="email-container">
+                        <input type="email" class="subs-email">
+                        <button type="submit" class="btn btn-default btn-form btn-custom">SUBSCRIBE</button>
+                    </div>
+                    <div class="privacy-container">
+                        <label for="privacy">
+                            <!--                   <input type="checkbox">-->
+                            <div class="checkbox-container">
+                                <div class="custom-checkbox"></div>
+                                <input type="checkbox" name="privacy" id="privacy" class="checkbox" style="opacity: 0;">
+                            </div>
+                            I authorise the processing of my personal data for the mailing of commercial and promotional
+                            communications (<a href="#newsletter-privacy-popup" class="fancybox-link">information on
+                            personal data processing)</a>
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <!--footer navigation-->
+            <div class="row footer-nav-container hide-mobile-xs">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="footer-nav">
+                        <span class="heading">THE BRAND</span>
+                        <ul>
+                            <li><a href="#">the history</a></li>
+                            <li><a href="#">social wall</a></li>
+                            <li><a href="#">adv campaign</a></li>
+                            <li><a href="#">store locator</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="footer-nav">
+                        <span class="heading">Corporate area</span>
+                        <ul>
+                            <li><a href="#">investor relations</a></li>
+                            <li><a href="#">franchise</a></li>
+                            <li><a href="#">press area</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="footer-nav">
+                        <span class="heading">Customer Care</span>
+                        <ul>
+                            <li><a href="#">faq's</a></li>
+                            <li><a href="#">contact us</a></li>
+                            <li><a href="#">easy return</a></li>
+                            <li><a href="#">size guide</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="footer-nav">
+                        <span class="heading">Legal Area</span>
+                        <ul>
+                            <li><a href="#">sales condition</a></li>
+                            <li><a href="#">terms of use</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">cookie</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="accordion" role="tablist" aria-multiselectable="true"
+                 class="footer-nav-container footer-nav-mobile show-mobile-xs">
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingOne">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true"
+                               aria-controls="collapseOne">
+                                THE BRAND
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="card-block footer-nav">
+                            <ul>
+                                <li><a href="#">the history</a></li>
+                                <li><a href="#">social wall</a></li>
+                                <li><a href="#">adv campaign</a></li>
+                                <li><a href="#">store locator</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingTwo">
+                        <h5 class="mb-0">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                               aria-expanded="false" aria-controls="collapseTwo">
+                                Corporate area
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="card-block footer-nav">
+                            <ul>
+                                <li><a href="#">investor relations</a></li>
+                                <li><a href="#">franchise</a></li>
+                                <li><a href="#">press area</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingThree">
+                        <h5 class="mb-0">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
+                               aria-expanded="false" aria-controls="collapseThree">
+                                Customer Care
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="card-block footer-nav">
+                            <ul>
+                                <li><a href="#">faq's</a></li>
+                                <li><a href="#">contact us</a></li>
+                                <li><a href="#">easy return</a></li>
+                                <li><a href="#">size guide</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingThree">
+                        <h5 class="mb-0">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour"
+                               aria-expanded="false" aria-controls="collapseFour">
+                                Legal Area
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+                        <div class="card-block footer-nav">
+                            <ul>
+                                <li><a href="#">sales condition</a></li>
+                                <li><a href="#">terms of use</a></li>
+                                <li><a href="#">privacy policy</a></li>
+                                <li><a href="#">cookie</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer bottom-->
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <img src="img/cc.png" alt="">
+                </div>
+                <div class="footer-bottom-right">
+                    <div class="social-links">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-youtube"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="logo-footer">
+                    <img src="img/logo-fiore.png" alt="">
+                </div>
+                <address class="copyright">© STEFANEL S.p.A - All rights reserved<br>STEFANEL S.p.A - via Postumia 85 -
+                    31047 Ponte di Piave (TV) | Cap. Soc. Eeuro 16.496.437,95 I.V. | VAT e lscr. Reg. Imp. TV
+                    01413940261 | R.E.A. di Treviso 154803 <br>
+
+                    TRIBOO DIGITALE SRL. A SOCIO UNICO P.IVA: 02912880966. All rights reserved.
+                    <a href="http://www.triboodigitale.it/" target="_blank" style="margin-left:15px;">Credits</a>
+                </address>
+            </div>
+        </div>
+    </div>
+    <!-- pop up -->
+    <div style="display: none;" id="hidden-content">
+        <div class="popup-container">
+            <div class="img-container">
+                <!--                        <img src="img/730x196_Change_Coutry_2.jpg" alt="">-->
+                <p>welcome to stefanel</p>
+            </div>
+            <div class="select-country">
+                <h2>select you country</h2>
+                <p>Be careful, the country selection will determine where will be shipped the products you purchase on
+                    the store. If your country is not listed, choose 'Other countries'</p>
+                <div class="country-form">
+                    <form action="">
+                        <select name="country" id="country">
+                            <option value="val1">Other Countries</option>
+                            <option value="val2">Country1</option>
+                            <option value="val3">Country2</option>
+                            <option value="val4">Country3</option>
+                        </select>
+                        <select name="country" id="country">
+                            <option value="val1">Other Countries</option>
+                            <option value="val2">Country1</option>
+                            <option value="val3">Country2</option>
+                            <option value="val4">Country3</option>
+                        </select>
+                        <button class="btn btn-form btn-custom">GO</button>
+
+                    </form>
+                </div>
+                <p><a href="#" data-fancybox-close>Continue navigation on this website</a></p>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<!-- bootstrap-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+<!-- fancy-box -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+
+<!-- custom script -->
+<script src="js/script.js"></script>
+</body>
+</html>
